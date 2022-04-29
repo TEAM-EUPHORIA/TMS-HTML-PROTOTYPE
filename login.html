@@ -31,30 +31,34 @@
 </head>
 
 <body>
-        <!-- Sign Up Start -->
-        <div class="background-image">
-        
-            <div class="row h-100  justify-content-center">
-                <div class="col-4">
-                    <div class="p-4 p-sm-5 my-4 ">
-                        <h1 class="text-center pb-4">L O G I N</h1>
-                        <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="floatingText" placeholder="jhondoe">
-                            <label for="floatingText">Username</label>
-                        </div>
-                        <div class="form-floating mb-4">
-                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                            <label for="floatingPassword">Password</label>
-                        </div>
-                        <div class="text-center">
-                            <button type="button" class="btn btn-dark">Login</button>
-                        </div>
+    <div class="background-img-login">
+        <div class="Login">
+            <div class="card-body">
+                <h2 class="text-uppercase text-center">LOGIN</h2>
+                <form>
+                    <br>
+                    <p>Please login to your account</p>
+                    <div class="form-input">
+                        <label class="form-label" for="ACE Number">ACE Number </label>
+                        <input type="text" id="Name" class="form-control form-control-lg"/>
                     </div>
-                </div>
+                    <div class="form-input">
+                        <label class="form-label" for="Password">Password</label>
+                        <input type="password" id="password" class="form-control form-control-lg" />
+                    </div>
+
+                    <div class="Login-btn">
+                        <a href="Home.html"><button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="button">Log in</button></a>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center pb-4">
+                        <p class="mb-0 me-2">Don't have an account?</p>
+                        <a href="Register.html" ><button type="button" class="btn btn-outline-danger">Create new</button></a>
+                    </div>
+
+                </form>
             </div>
-        
+        </div>
     </div>
-        <!-- Sign Up End -->
     </body>
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

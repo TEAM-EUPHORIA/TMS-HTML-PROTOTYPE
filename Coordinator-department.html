@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Head Navbar</title>
+    <title>Coordinator Navbar</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -37,15 +37,18 @@
                     <h3 class="text-primary">TMS</h3>
                 </a>
                 <div class="navbar-nav w-100">
-                    <a href="headhome.html" class="nav-item nav-link"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
-                    <a href="Profileview.html" class="nav-item nav-link "><i class="fa-solid fa-address-card"></i>My Profile</a>
-                    <a href="headdashboard.html" class="nav-item nav-link"><i class="fa fa-desktop" aria-hidden="true"></i>Dashboard</a>
-                    <a href="head-coordinator.html" class="nav-item nav-link"><i class="fa fa-user" aria-hidden="true"></i>Co-Ordinator</a>
-                    <a href="head-department.html" class="nav-item nav-link active"><i class="fa fa-book" aria-hidden="true"></i>Department</a>
-                    <a href="head-trainer.html" class="nav-item nav-link"><i class="fa fa-male" aria-hidden="true"></i>Trainer</a>
-                    <a href="head-trainee.html" class="nav-item nav-link"><i class="fa fa-users" aria-hidden="true"></i>Trainee</a>
-                    <a href="head-reviewer.html" class="nav-item nav-link"><i class="fa fa-user-md" aria-hidden="true"></i>Reviewer</a>
+                    <a href="#" class="nav-item nav-link "><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+                    <a href="#" class="nav-item nav-link "><i class="fa-solid fa-address-card"></i>My Profile</a>
+                    <a href="#" class="nav-item nav-link"><i class="fa fa-desktop" aria-hidden="true"></i>Dashboard</a>
+                    <a href="#" class="nav-item nav-link active"><i class="fa fa-book" aria-hidden="true"></i>Department</a>
+                    <a href="#" class="nav-item nav-link"><i class="fa fa-address-book" aria-hidden="true"></i>Courses</a>
+                    <a href="#" class="nav-item nav-link"><i class="fa fa-male" aria-hidden="true"></i>Trainer</a>
+                    <a href="#" class="nav-item nav-link"><i class="fa fa-users" aria-hidden="true"></i>Trainee</a>
+                    <a href="#" class="nav-item nav-link"><i class="fa fa-user-md" aria-hidden="true"></i>Reviewer</a>
+                    <a href="#" class="nav-item nav-link"><i class="fa-solid fa-square-pen"></i>Review</a>
+                    <a href="#" class="nav-item nav-link"><i class="fa fa-user-plus" aria-hidden="true"></i>Attendance</a>
                 </div>
+
             </nav>
         </div>
         <!-- Sidebar End -->
@@ -84,16 +87,31 @@
         <section><h2 class="pt-4 px-4">Department List</h2> </section>
 
         <div class="container-fluid px-4 pt-2 pb-2">
-            
+            <div class="header" id="style">
+                <a href="Coordinator-add_department.html">  <button type="button" class="btn btn-dark pe-4 px-4">Add</button></a>
+                <input class="form-control" id="search" type="text" placeholder="Search" aria-label="Search">
+            </div>
 
 
             <div class="row g-3 my-2">
                 <div class="col-md-12">
                     <div class="p-4 bg-light shadow-sm d-flex justify-content-around align-items-center rounded">
-                        <div class="col-10">
-                            <a href=""><p class="mb-0 text-dark">BFS</p></a>
-                        </div>
-                        
+                        <div class="col-2">
+                            <a href=""><p class="mb-0 text-dark">Dot Net</p></a>
+                        </div >
+                        <div  class="col-2"><a href="coordinator-edit_depatment.html"><i class="fa-solid fa-pen-to-square text-dark"></i></a></div>
+                        <a href=""><i class="fa-solid fa-ban text-dark"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-3 my-2">
+                <div class="col-md-12">
+                    <div class="p-4 bg-light shadow-sm d-flex justify-content-around align-items-center rounded">
+                        <div class="col-2">
+                            <a href="Coordinator-edit_department.html"><p class="mb-0 text-dark">BFS</p></a>
+                        </div >
+                        <div  class="col-2"><a href=""><i class="fa-solid fa-pen-to-square text-dark"></i></a></div>
+                        <a href=""><i class="fa-solid fa-ban text-dark"></i></a>
                     </div>
                 </div>
             </div>
@@ -101,47 +119,38 @@
             <div class="row g-3 my-2">
                 <div class="col-md-12">
                     <div class="p-4 bg-light shadow-sm d-flex justify-content-around align-items-center rounded">
-                        <div class="col-10">
-                            <a href=""><p class="mb-0 text-dark">DotNet</p></a>
-                        </div>
-                       
+                        <div class="col-2">
+                            <a href="Coordinator-edit_depatment.html"><p class="mb-0 text-dark">IAS</p></a>
+                        </div >
+                        <div  class="col-2"><a href=""><i class="fa-solid fa-pen-to-square text-dark"></i></a></div>
+                        <a href=""><i class="fa-solid fa-ban text-dark"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-3 my-2">
+                <div class="col-md-12">
+                    <div class="p-4 bg-light shadow-sm d-flex justify-content-around align-items-center rounded">
+                        <div class="col-2">
+                            <a href="Coordinator-edit_depatment.html"><p class="mb-0 text-dark">Java</p></a>
+                        </div >
+                        <div  class="col-2"><a href=""><i class="fa-solid fa-pen-to-square text-dark"></i></a></div>
+                        <a href=""><i class="fa-solid fa-ban text-dark"></i></a>
+                    </div>
+                </div>
+            </div>
+<div class="row g-3 my-2">
+                <div class="col-md-12">
+                    <div class="p-4 bg-light shadow-sm d-flex justify-content-around align-items-center rounded">
+                        <div class="col-2">
+                            <a href="Coordinator-edit_depatment.html"><p class="mb-0 text-dark">EBA</p></a>
+                        </div >
+                        <div  class="col-2"><a href=""><i class="fa-solid fa-pen-to-square text-dark"></i></a></div>
+                        <a href=""><i class="fa-solid fa-ban text-dark"></i></a>
                     </div>
                 </div>
             </div>
 
-            <div class="row g-3 my-2">
-                <div class="col-md-12">
-                    <div class="p-4 bg-light shadow-sm d-flex justify-content-around align-items-center rounded">
-                        <div class="col-10">
-                            <a href=""><p class="mb-0 text-dark">Lamp</p></a>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-
-            <div class="row g-3 my-2">
-                <div class="col-md-12">
-                    <div class="p-4 bg-light shadow-sm d-flex justify-content-around align-items-center rounded">
-                        <div class="col-10">
-                            <a href=""><p class="mb-0 text-dark">IAS</p></a>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-
-            <div class="row g-3 my-2">
-                <div class="col-md-12">
-                    <div class="p-4 bg-light shadow-sm d-flex justify-content-around align-items-center rounded">
-                        <div class="col-10">
-                            <a href=""><p class="mb-0 text-dark">Java</p></a>
-                        </div>
-                    
-                    </div>
-                </div>
-            </div>
-        </div>
+           
 
        <div class="container p-4 d-flex justify-content-around sticky-top px-4">
         <nav aria-label="Page navigation example">

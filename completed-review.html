@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Head Navbar</title>
+    <title>Completed Review</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -31,28 +31,28 @@
 
 <body>
         <!-- Sidebar Start -->
+        <!-- Sidebar Start -->
         <div class="sidebar pe-4 pb-3">
             <nav class="navbar bg-light navbar-light">
                 <a href="index.html" class="navbar-brand mx-4 mb-3">
                     <h3 class="text-primary">TMS</h3>
                 </a>
                 <div class="navbar-nav w-100">
-                    <a href="headhome.html" class="nav-item nav-link"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
-                    <a href="Profileview.html" class="nav-item nav-link "><i class="fa-solid fa-address-card"></i>My Profile</a>
-                    <a href="headdashboard.html" class="nav-item nav-link"><i class="fa fa-desktop" aria-hidden="true"></i>Dashboard</a>
-                    <a href="head-coordinator.html" class="nav-item nav-link"><i class="fa fa-user" aria-hidden="true"></i>Co-Ordinator</a>
-                    <a href="head-department.html" class="nav-item nav-link active"><i class="fa fa-book" aria-hidden="true"></i>Department</a>
-                    <a href="head-trainer.html" class="nav-item nav-link"><i class="fa fa-male" aria-hidden="true"></i>Trainer</a>
-                    <a href="head-trainee.html" class="nav-item nav-link"><i class="fa fa-users" aria-hidden="true"></i>Trainee</a>
-                    <a href="head-reviewer.html" class="nav-item nav-link"><i class="fa fa-user-md" aria-hidden="true"></i>Reviewer</a>
+                    <a href="#" class="nav-item nav-link "><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+                    <a href="#" class="nav-item nav-link "><i class="fa-solid fa-address-card"></i>My Profile</a>
+                    <a href="#" class="nav-item nav-link "><i class="fa-solid fa-square-pen"></i>Assigned Review</a>
+                    <a href="#" class="nav-item nav-link active"><i class="fa-solid fa-clipboard-list"></i>Completed Review</a>
+                    <a href="#" class="nav-item nav-link "><i class="fa-solid fa-xmark"></i></i>Canceled Review</a>
+                    
                 </div>
             </nav>
         </div>
         <!-- Sidebar End -->
+        <!-- Sidebar End -->
 
         <!-- Content Start -->
         <div class="content">
-            <!-- Navbar Start -->
+           <!-- Navbar Start -->
            <nav class="navbar navbar-expand bg-light navbar-light sticky-top px-4 py-0">
             <a href="#" class="sidebar-toggler flex-shrink-0">
                 <i class="fa fa-bars"></i>
@@ -66,32 +66,35 @@
             </div>
             </nav>
         <!-- Navbar End -->
-            <div class="Bread pt-1 px-1">
-                <body>
-                    <!-- Breadcrums Start -->
-                    <div style="margin:20px;">
-                        <nav aria-label="breadcrumb">
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item">
-                                    <a href="headhome.html">Home</a></li>
-                                <li class="breadcrumb-item active">Department List </li>
-                            </ol>
-                        </nav>
-                    </div>
-                </body>
-            </div>
 
-        <section><h2 class="pt-4 px-4">Department List</h2> </section>
+
+        <section><h2 class="pt-4 px-4">Completed Review</h2> </section>
 
         <div class="container-fluid px-4 pt-2 pb-2">
+            <div class="header" id="style">
+               
+                <input class="form-control" id="search" type="text" placeholder="Search" aria-label="Search">
             
-
+                 <!-- Search form --> 
+            </div>
 
             <div class="row g-3 my-2">
                 <div class="col-md-12">
                     <div class="p-4 bg-light shadow-sm d-flex justify-content-around align-items-center rounded">
-                        <div class="col-10">
-                            <a href=""><p class="mb-0 text-dark">BFS</p></a>
+                        <div>
+                            <a href=""><p class="mb-0 text-dark">Trainee:Neo</p></a>
+                        </div>
+                        <div>
+                            <a href=""><p class="mb-0 text-dark">Date:12-10-2021</p></a>
+                        </div>
+                        <div>
+                            <a href=""><p class="mb-0 text-dark">Time:12.30PM</p></a>
+                        </div>
+                        <div>
+                            <a href=""><p class="mb-0 text-dark">Status:Completed</p></a>
+                        </div>
+                        <div>
+                            <a href="momview.html"><button type="button" class="btn btn-dark pe-4 px-4">View MOM</button></a>
                         </div>
                         
                     </div>
@@ -101,8 +104,20 @@
             <div class="row g-3 my-2">
                 <div class="col-md-12">
                     <div class="p-4 bg-light shadow-sm d-flex justify-content-around align-items-center rounded">
-                        <div class="col-10">
-                            <a href=""><p class="mb-0 text-dark">DotNet</p></a>
+                        <div>
+                            <a href=""><p class="mb-0 text-dark">Trainee:Taylor</p></a>
+                        </div>
+                        <div>
+                            <a href=""><p class="mb-0 text-dark">Date:12-10-2021</p></a>
+                        </div>
+                        <div>
+                            <a href=""><p class="mb-0 text-dark">Time:12.30PM</p></a>
+                        </div>
+                        <div>
+                            <a href=""><p class="mb-0 text-dark">Status:Completed</p></a>
+                        </div>
+                        <div>
+                            <a href="momview.html"><button type="button" class="btn btn-dark pe-4 px-4">View MOM</button></a>
                         </div>
                        
                     </div>
@@ -112,10 +127,22 @@
             <div class="row g-3 my-2">
                 <div class="col-md-12">
                     <div class="p-4 bg-light shadow-sm d-flex justify-content-around align-items-center rounded">
-                        <div class="col-10">
-                            <a href=""><p class="mb-0 text-dark">Lamp</p></a>
+                        <div>
+                            <a href=""><p class="mb-0 text-dark">Trainee:Joe</p></a>
                         </div>
-                        
+                        <div>
+                            <a href=""><p class="mb-0 text-dark">Date:12-10-2021</p></a>
+                        </div>
+                        <div>
+                            <a href=""><p class="mb-0 text-dark">Time:12.30PM</p></a>
+                        </div>
+                        <div>
+                            <a href=""><p class="mb-0 text-dark">Status:Completed</p></a>
+                        </div>
+                        <div>
+                            <a href="momview.html"><button type="button" class="btn btn-dark pe-4 px-4">View MOM</button></a>
+                        </div>
+                     
                     </div>
                 </div>
             </div>
@@ -123,10 +150,21 @@
             <div class="row g-3 my-2">
                 <div class="col-md-12">
                     <div class="p-4 bg-light shadow-sm d-flex justify-content-around align-items-center rounded">
-                        <div class="col-10">
-                            <a href=""><p class="mb-0 text-dark">IAS</p></a>
+                        <div>
+                            <a href=""><p class="mb-0 text-dark">Trainee:Noe</p></a>
                         </div>
-                        
+                        <div>
+                            <a href=""><p class="mb-0 text-dark">Date:12-10-2021</p></a>
+                        </div>
+                        <div>
+                            <a href=""><p class="mb-0 text-dark">Time:12.30PM</p></a>
+                        </div>
+                        <div>
+                            <a href=""><p class="mb-0 text-dark">Status:Completed</p></a>
+                        </div>
+                        <div>
+                            <a href="momview.html"><button type="button" class="btn btn-dark pe-4 px-4">View MOM</button></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -134,10 +172,22 @@
             <div class="row g-3 my-2">
                 <div class="col-md-12">
                     <div class="p-4 bg-light shadow-sm d-flex justify-content-around align-items-center rounded">
-                        <div class="col-10">
-                            <a href=""><p class="mb-0 text-dark">Java</p></a>
+                        <div>
+                            <a href=""><p class="mb-0 text-dark">Trainee:Bramty</p></a>
                         </div>
-                    
+                        <div>
+                            <a href=""><p class="mb-0 text-dark">Date:12-10-2021</p></a>
+                        </div>
+                        <div>
+                            <a href=""><p class="mb-0 text-dark">Time:12.30PM</p></a>
+                        </div>
+                        <div>
+                            <a href=""><p class="mb-0 text-dark">Status:Completed</p></a>
+                        </div>
+                        <div>
+                            <a href="ViewMOM.html"><button type="button" class="btn btn-dark pe-4 px-4">View MOM</button></a>
+                        </div>
+                       
                     </div>
                 </div>
             </div>
@@ -173,7 +223,7 @@
                         &copy; <a href="#">Your Site Name</a>, All Right Reserved. 
                     </div>
                     <div class="col-12 col-sm-6 text-center text-sm-end">
-                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                        <!--/* This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. */-->
                         Designed By <a href="https://htmlcodex.com">HTML Codex</a>
                     </div>
                 </div>
@@ -183,6 +233,7 @@
     </div>
     <!-- Content End -->
 
+            
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
