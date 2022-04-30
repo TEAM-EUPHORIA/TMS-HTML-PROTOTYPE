@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Head Navbar</title>
+    <title>Login</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -17,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
+
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
@@ -27,39 +27,52 @@
 
     <!-- Template Stylesheet -->
     <link href="src/css/style.css" rel="stylesheet">
-    <link rel="src/stylesheet" href="css/styles.css">
 </head>
 
-<body>
-    <div class="background-img-login">
-        <div class="Login">
-            <div class="card-body">
-                <h2 class="text-uppercase text-center">LOGIN</h2>
-                <form>
-                    <br>
-                    <p>Please login to your account</p>
-                    <div class="form-input">
-                        <label class="form-label" for="ACE Number">ACE Number </label>
-                        <input type="text" id="Name" class="form-control form-control-lg"/>
-                    </div>
-                    <div class="form-input">
-                        <label class="form-label" for="Password">Password</label>
-                        <input type="password" id="password" class="form-control form-control-lg" />
-                    </div>
+<body class="vh-100 ">
 
-                    <div class="Login-btn">
-                        <a href="Home.html"><button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="button">Log in</button></a>
-                    </div>
-                    <div class="d-flex align-items-center justify-content-center pb-4">
-                        <p class="mb-0 me-2">Don't have an account?</p>
-                        <a href="Register.html" ><button type="button" class="btn btn-outline-danger">Create new</button></a>
-                    </div>
 
-                </form>
+    <section class="vh-100 d-flex align-items-center">
+        <div class="container-fluid h-custom">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-md-9 col-lg-6 col-xl-5">
+                    <img src="src/img/login.jpeg" class="img-fluid rounded-3" alt="Sample image">
+                </div>
+                <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+                    <form>
+                        <div class="display-4 text-center my-3">L O G I N </div>
+
+                        <!-- Email input -->
+                        <div class="form-outline mb-4">
+                            <input type="email" id="form3Example3" class="form-control form-control-lg"
+                                placeholder=" Username" />
+                        </div>
+
+                        <!-- Password input -->
+                        <div class="form-outline mb-3">
+                            <input type="password" id="form3Example4" class="form-control form-control-lg"
+                                placeholder=" password" />
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center">
+                            <!-- Checkbox -->
+                            <div class="form-check mb-0">
+                                <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3" />
+                                <label class="form-check-label" for="form2Example3">
+                                    Remember Username
+                                </label>
+                            </div>
+                        </div>
+
+                        <button type="button" class="btn btn-dark pe-10 px-10 mt-3">Login</button></a>
+
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
-    </body>
+
+    </section>
+
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -73,7 +86,44 @@
 
     <!-- Template Javascript -->
     <script src="src/js/main.js"></script>
-
+    <!-- Code injected by live-server -->
+    <script type="text/javascript">
+        // <![CDATA[  <-- For SVG support
+        if ('WebSocket' in window) {
+            (function () {
+                function refreshCSS() {
+                    var sheets = [].slice.call(document.getElementsByTagName("link"));
+                    var head = document.getElementsByTagName("head")[0];
+                    for (var i = 0; i < sheets.length; ++i) {
+                        var elem = sheets[i];
+                        var parent = elem.parentElement || head;
+                        parent.removeChild(elem);
+                        var rel = elem.rel;
+                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                        }
+                        parent.appendChild(elem);
+                    }
+                }
+                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                var address = protocol + window.location.host + window.location.pathname + '/ws';
+                var socket = new WebSocket(address);
+                socket.onmessage = function (msg) {
+                    if (msg.data == 'reload') window.location.reload();
+                    else if (msg.data == 'refreshcss') refreshCSS();
+                };
+                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                    console.log('Live reload enabled.');
+                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                }
+            })();
+        }
+        else {
+            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+        }
+	// ]]>
+    </script>
+</body>
 
 </html>
-
