@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Head Navbar</title>
+    <title>Head My Profile</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -37,8 +37,9 @@
                     <h3 class="text-primary">TMS</h3>
                 </a>
                 <div class="navbar-nav w-100">
-                    <a href="headhome.html" class="nav-item nav-link active"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
-                    <a href="headdashboard.html" class="nav-item nav-link"><i class="fa fa-desktop" aria-hidden="true"></i>Dashboard</a>
+                    <a href="head-home.html" class="nav-item nav-link "><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+                    <a href="head-profileview.html" class="nav-item nav-link active"><i class="fa-solid fa-address-card" aria-hidden="true"></i>My Profile</a>
+                    <a href="head-dashboard.html" class="nav-item nav-link"><i class="fa fa-desktop" aria-hidden="true"></i>Dashboard</a>
                     <a href="head-coordinator.html" class="nav-item nav-link"><i class="fa fa-user" aria-hidden="true"></i>Co-Ordinator</a>
                     <a href="head-department.html" class="nav-item nav-link"><i class="fa fa-book" aria-hidden="true"></i>Department</a>
                     <a href="head-trainer.html" class="nav-item nav-link"><i class="fa fa-male" aria-hidden="true"></i>Trainer</a>
@@ -51,66 +52,69 @@
 
         <!-- Content Start -->
         <div class="content">
-            <!-- Navbar Start -->
-            <nav class="navbar navbar-expand bg-light navbar-light sticky-top px-4 py-0">
-             <a href="#" class="sidebar-toggler flex-shrink-0">
-                 <i class="fa fa-bars"></i>
-             </a>
-             <div class="navbar-nav align-items-center ms-auto">
-                 <div class="nav-item">
-                     <a href="#" class="d-none d-lg-inline-flex">
-                         <a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>&nbsp;Log Out</a>
-                     </a>
-                 </div>
-             </div>
-             </nav>
-         <!-- Navbar End -->
- 
-        
-         <h2 class="pt-4 px-4">Schedule Review</h2> 
-            <div class="container mt-4">
-                <div class="col-xl-6">
-                    <select class="form-select mb-4 mt-4" aria-label=".form-select-sm example">
-                        <option selected>Department</option>
-                        <option value="1">.Net</option>
-                        <option value="2">Java</option>
-                        <option value="3">EBA</option>
-                        <option value="3">BFS</option>
-                    </select>
-        
-                    <select class="form-select mb-4 mt-4" aria-label=".form-select-sm example">
-                        <option selected>Reviewer</option>
-                        <option value="1">Jack</option>
-                        <option value="2">Jonny</option>
-                        <option value="3">George</option>
-                        <option value="3">maria</option>
-                    </select>
-            
-                    <select class="form-select mt-4 mb-4" aria-label=".form-select-sm example">
-                        <option selected>Trainee</option>
-                        <option value="1">Thomas</option>
-                        <option value="2">Sarah</option>
-                        <option value="3">Daniel</option>
-                        <option value="3">Lisa</option>
-                    </select>
-                    
-                <!--calender-->
-                <div class="input-group rounded my-2 mt-4">
-                    <input type="date" class="form-control rounded" placeholder="Date" aria-label="date" aria-describedby="search-addon" />
+           <!-- Navbar Start -->
+           <nav class="navbar navbar-expand bg-light navbar-light sticky-top px-4 py-0">
+            <a href="#" class="sidebar-toggler flex-shrink-0">
+                <i class="fa fa-bars"></i>
+            </a>
+            <div class="navbar-nav align-items-center ms-auto">
+                <div class="nav-item">
+                    <a href="#" class="d-none d-lg-inline-flex">
+                        <a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>&nbsp;Log Out</a>
+                    </a>
                 </div>
-            <!--Calender end-->
+            </div>
+            </nav>
+        <!-- Navbar End -->
 
-            <!--Time-->
-                    <div class="input-group rounded my-2 mt-4">
-                        <input type="time" class="form-control rounded" placeholder="Time" aria-label="Search" aria-describedby="search-addon" />
-                    </div>
-            <!--Time-->
+         <!-- Breadcrums Start -->
+        <div class="Bread pt-1 px-1">
+            <body>
+                <div class="Bread pt-1 px-1">
+                    <body>
+                        <div style="margin:20px;">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item">
+                                        <a href="head-home.html">Home</a></li>
+                                    <li class="breadcrumb-item active"> My Profile </li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </body>
                 </div>
-        
-            <a href="head-coordinator.html"><button type="submit" class="btn btn-dark pe-4 px-4 mt-4">Schedule</button></a>
-    
-        </div>
-     
+                <section><h2 class="pt-4 px-4">My Profile</h2> </section>
+                
+                
+                <div class="card mb-3 p-4 px-4 py-4 ms-4" style="width: 600px">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="src/img/1.jpeg" class="img-fluid rounded-start" alt="image" style="width: 200px;">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body text-left">
+                          <h5 class="card-title">Name : Robert  </h5>
+                          <h5 class="card-title">Role : Training Head</h5>
+                         
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                  <div class="card mb-3 p-4 px-4 py-4 ms-4" style="width: 600px">
+                    <div class="row g-0">
+                      <div class="col-md-8">
+                        <div class="card-body text-left">
+                          <h5 class="card-title">Personal Details</h5>
+                          <p>Employee ID : Emp0001</p>
+                          <p>Fullname : Robert</p>
+                          <p>E-Mail : robert@gmail.com</p>
+                          
+                         
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+               
         <footer>
             <div class="container-fluid flex-end pt-4 px-4">
                 <div class="bg-light rounded-top p-4">
@@ -144,4 +148,3 @@
 </body>
 
 </html>
-

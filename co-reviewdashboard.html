@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Head Navbar</title>
+    <title>Co-Ordinator Dashboard</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -37,21 +37,18 @@
                 <a href="index.html" class="navbar-brand mx-4 mb-3">
                     <h3 class="text-primary">TMS</h3>
                 </a>
-                <div class="d-flex align-items-center ms-4 mb-4">
-                    <div class="position-relative">
-                        
-                    </div>
-                    
-                </div>
                 <div class="navbar-nav w-100">
-                    <a href="headhome.html" class="nav-item nav-link "><i class="fa fa-home" aria-hidden="true"></i>Home</a>
-                    <a href="Profileview.html" class="nav-item nav-link "><i class="fa-solid fa-address-card"></i>My Profile</a>
-                    <a href="headdashboard.html" class="nav-item nav-link active"><i class="fa fa-desktop" aria-hidden="true"></i>Dashboard</a>
-                    <a href="head-coordinator.html" class="nav-item nav-link"><i class="fa fa-user" aria-hidden="true"></i>Co-Ordinator</a>
-                    <a href="head-department.html" class="nav-item nav-link"><i class="fa fa-book" aria-hidden="true"></i>Department</a>
-                    <a href="head-trainer.html" class="nav-item nav-link"><i class="fa fa-male" aria-hidden="true"></i>Trainer</a>
-                    <a href="head-trainee.html" class="nav-item nav-link"><i class="fa fa-users" aria-hidden="true"></i>Trainee</a>
-                    <a href="head-reviewer.html" class="nav-item nav-link"><i class="fa fa-user-md" aria-hidden="true"></i>Reviewer</a>
+                    <a href="Co-home.html" class="nav-item nav-link"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+                    <a href="co-profileview.html" class="nav-item nav-link "><i class="fa-solid fa-address-card"></i>My Profile</a>
+                    <a href="co-dashboard.html" class="nav-item nav-link"><i class="fa fa-desktop" aria-hidden="true"></i>Dashboard</a>
+                    <a href="co-departmentlist.html" class="nav-item nav-link "><i class="fa fa-book" aria-hidden="true"></i>Department</a>
+                    <a href="#" class="nav-item nav-link"><i class="fa fa-address-book" aria-hidden="true"></i>Courses</a>
+                    <a href="#" class="nav-item nav-link"><i class="fa-solid fa-file-pen"></i>Assign Course</a>
+                    <a href="co-trainer.html" class="nav-item nav-link"><i class="fa fa-male" aria-hidden="true"></i>Trainer</a>
+                    <a href="co-trainee.html" class="nav-item nav-link"><i class="fa fa-users" aria-hidden="true"></i>Trainee</a>
+                    <a href="co-reviewer.html" class="nav-item nav-link"><i class="fa fa-user-md" aria-hidden="true"></i>Reviewer</a>
+                    <a href="co-reviewdashboard.html" class="nav-item nav-link active"><i class="fa-solid fa-square-pen"></i>Review</a>
+                    <a href="#" class="nav-item nav-link"><i class="fa fa-user-plus" aria-hidden="true"></i>Attendance</a>
                 </div>
             </nav>
         </div>
@@ -82,80 +79,77 @@
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item">
-                                    <a href="headhome.html">Home</a></li>
-                                <li class="breadcrumb-item active">Dashboard </li>
+                                    <a href="co-home.html">Home</a></li>
+                                <li class="breadcrumb-item active">Review </li>
                             </ol>
                         </nav>
                     </div>
                 </body>
             </div>
-            <section><h2 class="pt-4 px-4">Dashboard</h2> </section>
-
-
-        <!-- Sale & Revenue Start -->
-        <div class="container-fluid pt-2 px-4">
-            <div class="row g-1">
-                <div class="col-sm-8 col-xl-12">
-                   <a href="Profileview.html" class="nav-item nav-link ">
-                    <div class="bg-light rounded d-flex align-items-center justify-content-between p-4">
-                        <img src="img/user.jpg" alt="Profile">
-                        <div class="ms-3">
-                            <div><h6 class="mb-3">Welcome, Robert</h6>
-                                <h6 class="mb-0">Role:Training Head</h6></div>
+          
+        <div class="container-fluid px-2">
+            <div class="row g-3 my-2">
+                <div class="col-md-6">
+                    <a href="co-schedulereview.html" class="nav-item nav-link active">
+                        <div class="p-4 bg-light shadow-sm d-flex justify-content-around align-items-center rounded">
+                            <div class="col-2">
+                                <i class="fa-solid fa-square-pen fs-3 text-dark" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-xs-2 ">
+                                <h4 class="mb-0 text-dark">Schedule Review</h4>
+                            </div>
+                            <div class="col-2">
+                                <h3 class="mb-0 mx-3" >5</h3>
+                            </div>
                         </div>
-                    </div>
-                   </a>
+                    </a>
+                </div>
+
+                <div class="col-md-6">
+                    <a href="head-coordinator.html" class="nav-item nav-link active">
+                        <div class="p-4 bg-light shadow-sm d-flex justify-content-around align-items-center rounded">
+                            <div class="col-2">
+                                <i class="fa fa-book text-dark fs-3" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-xs-2 ">
+                                <h4 class="mb-0 text-dark">Assigned Review</h4>
+                            </div>
+                            <div class="col-2">
+                                <h3 class="mb-0 mx-3" >5</h3>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
-        </div>
-
-        <div class="container-fluid px-4">
             <div class="row g-3 my-2">
                 <div class="col-md-6">
                     <a href="head-coordinator.html" class="nav-item nav-link active">
                         <div class="p-4 bg-light shadow-sm d-flex justify-content-around align-items-center rounded">
-                            <i class="fa fa-user  fs-1 text-dark" aria-hidden="true"></i>
-                        <div>
-                            <p class="mb-0 fs-1 text-dark">Co-Ordinator</p>
-                        </div>
-                        <h3 class="fs-1">5</h3>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-md-6">
-                    <a href="head-department.html" class="nav-item nav-link ">
-                        <div class="p-4 bg-light shadow-sm d-flex justify-content-around align-items-center rounded">
-                        <i class="fa-solid fa-book fs-1 text-dark"></i>
-                        <div>
-                            <p class="mb-0 fs-1 text-dark">Department</p>
-                        </div>
-                        <h3 class="fs-1">5</h3>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="row g-3 my-2">
-                <div class="col-md-6">
-                    <a href="head-trainer.html" class="nav-item nav-link ">
-                        <div class="p-4 bg-light shadow-sm d-flex justify-content-around align-items-center rounded">
-                            <i class="fa fa-male fs-1 text-dark" aria-hidden="true"></i>
-                        <div>
-                            <p class="mb-0 fs-1 text-dark">Trainer</p>
-                        </div>
-                        <h3 class="fs-1">5</h3>
+                            <div class="col-2">
+                                <i class="fa fa-male text-dark mx-2 fs-3" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-xs-2 ">
+                                <h4 class="mb-0 text-dark">Completed Review</h4>
+                            </div>
+                            <div class="col-2">
+                                <h3 class="mb-0 mx-3">5</h3>
+                            </div>
                         </div>
                     </a>
                 </div>
 
                 <div class="col-md-6">
-                    <a href="head-trainee.html" class="nav-item nav-link ">
+                    <a href="head-coordinator.html" class="nav-item nav-link active">
                         <div class="p-4 bg-light shadow-sm d-flex justify-content-around align-items-center rounded">
-                            <i class="fa fa-users fs-1 text-dark" aria-hidden="true"></i>
-                        <div>
-                            <p class="mb-0 fs-1 text-dark">Trainee</p>
-                        </div>
-                        <h3 class="fs-1">5</h3>
+                            <div class="col-2">
+                                <i class="fa fa-users text-dark fs-3" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-xs-2 ">
+                                <h4 class="mb-0 text-dark">Canceled Review</h4>
+                            </div>
+                            <div class="col-2">
+                                <h3 class="mb-0 mx-4" >5</h3>
+                            </div>
                         </div>
                     </a>
                 </div>

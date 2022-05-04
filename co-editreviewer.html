@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <title>Coordinator add_department</title>
+    <title>Coordinator Edit Reviewer</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -38,15 +39,16 @@
             <h3 class="text-primary">TMS</h3>
         </a>
         <div class="navbar-nav w-100">
-            <a href="#" class="nav-item nav-link"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
-            <a href="#" class="nav-item nav-link "><i class="fa-solid fa-address-card"></i>My Profile</a>
-            <a href="#" class="nav-item nav-link"><i class="fa fa-desktop" aria-hidden="true"></i>Dashboard</a>
-            <a href="Coordinator-department.html" class="nav-item nav-link active"><i class="fa fa-book" aria-hidden="true"></i>Department</a>
+            <a href="co-home.html" class="nav-item nav-link"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+            <a href="co-profileview.html" class="nav-item nav-link"><i class="fa-solid fa-address-card"></i>My Profile</a>
+            <a href="co-dashboard.html" class="nav-item nav-link"><i class="fa fa-desktop" aria-hidden="true"></i>Dashboard</a>
+            <a href="co-departmentlist.html" class="nav-item nav-link"><i class="fa fa-book" aria-hidden="true"></i>Department</a>
             <a href="#" class="nav-item nav-link"><i class="fa fa-address-book" aria-hidden="true"></i>Courses</a>
-            <a href="#" class="nav-item nav-link"><i class="fa fa-male" aria-hidden="true"></i>Trainer</a>
-            <a href="#" class="nav-item nav-link"><i class="fa fa-users" aria-hidden="true"></i>Trainee</a>
-            <a href="#" class="nav-item nav-link"><i class="fa fa-user-md" aria-hidden="true"></i>Reviewer</a>
-            <a href="#" class="nav-item nav-link"><i class="fa-solid fa-square-pen"></i>Review</a>
+            <a href="#" class="nav-item nav-link"><i class="fa-solid fa-file-pen"></i>Assign Course</a>
+            <a href="co-trainer.html" class="nav-item nav-link"><i class="fa fa-male" aria-hidden="true"></i>Trainer</a>
+            <a href="co-trainee.html" class="nav-item nav-link"><i class="fa fa-users" aria-hidden="true"></i>Trainee</a>
+            <a href="co-reviewer.html" class="nav-item nav-link active"><i class="fa fa-user-md" aria-hidden="true"></i>Reviewer</a>
+            <a href="co-reviewdashboard.html" class="nav-item nav-link"><i class="fa-solid fa-square-pen"></i>Review</a>
             <a href="#" class="nav-item nav-link"><i class="fa fa-user-plus" aria-hidden="true"></i>Attendance</a>
         </div>
     </nav>
@@ -76,11 +78,11 @@
           <nav aria-label="breadcrumb">
               <ol class="breadcrumb">
                   <li class="breadcrumb-item">
-                      <a href="headhome.html">Home</a></li>
+                      <a href="co-home.html">Home</a></li>
                   <li class="breadcrumb-item ">
-                      <a href="Coordinator-department.html">Department List</a>
+                      <a href="co-reviewer.html">Reviewer List</a>
                   </li>
-                  <li class="breadcrumb-item active">Add Department</li>
+                  <li class="breadcrumb-item active">Edit Reviewer</li>
               </ol>
           </nav>
       </div>
@@ -88,14 +90,29 @@
 </div>
 
   <div class="col-sm-6 p-4">
-      <h3 class="text-black pb-2">Add Department</h3> 
+      <h3 class="text-black pb-2">Edit Reviewer</h3> 
         <div class="form-floating mb-4">
             <input type="text" class="form-control" id="floatingText" placeholder="jhondoe">
-            <label for="floatingText">Department</label>
+            <label for="floatingText">Fullname</label>
         </div>
-        
-        
-        <a href="coordinator-department.html"><button type="submit" class="btn btn-dark pe-4 px-4">Add</button></a>
+        <div class="form-floating mb-4">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Email address</label>
+        </div>
+        <div class="form-floating mb-4 nav-item dropdown">
+            <input type="text" class="form-control" id="floatingText" placeholder="jhondoe">
+            <label for="floatingText">Username</label>
+        </div><div class="form-floating mb-4">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword">Password</label>
+        </div>     
+        <hr>  
+        <div class="form-group mt-3">
+            <label class="mr-2">Upload your Image:</label>
+            <input type="file" name="file">
+        </div>
+        <hr>
+        <a href="co-reviewer.html"><button type="submit" class="btn btn-dark pe-4 px-4">Save</button></a>
   </div>  
 
    <!-- Footer Start -->

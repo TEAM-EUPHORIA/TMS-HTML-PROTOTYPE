@@ -36,22 +36,22 @@
         <div class="container-fluid h-custom">
             <div class="row d-flex justify-content-center align-items-center h-100">
                 <div class="col-md-9 col-lg-6 col-xl-5">
-                    <img src="src/img/login.jpeg" class="img-fluid rounded-3" alt="Sample image">
+                    <img src="/src/img/Login.jpeg" class="img-fluid rounded-3" alt="Sample image">
                 </div>
                 <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
                     <form>
-                        <div class="display-4 text-center my-3">L O G I N </div>
+                        <div class="display-4 text-center my-3">Login </div>
 
                         <!-- Email input -->
                         <div class="form-outline mb-4">
                             <input type="email" id="form3Example3" class="form-control form-control-lg"
-                                placeholder=" Username" />
+                                placeholder="Enter User name" />
                         </div>
 
                         <!-- Password input -->
                         <div class="form-outline mb-3">
                             <input type="password" id="form3Example4" class="form-control form-control-lg"
-                                placeholder=" password" />
+                                placeholder="Enter password" />
                         </div>
 
                         <div class="d-flex justify-content-between align-items-center">
@@ -59,12 +59,12 @@
                             <div class="form-check mb-0">
                                 <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3" />
                                 <label class="form-check-label" for="form2Example3">
-                                    Remember Username
+                                    Remember me
                                 </label>
                             </div>
                         </div>
 
-                        <button type="button" class="btn btn-dark pe-10 px-10 mt-3">Login</button></a>
+                        <a href="head-home.html"><button type="button" class="btn btn-dark pe-10 px-10 mt-3">Login</button></a>
 
                     </form>
                 </div>
@@ -86,44 +86,6 @@
 
     <!-- Template Javascript -->
     <script src="src/js/main.js"></script>
-    <!-- Code injected by live-server -->
-    <script type="text/javascript">
-        // <![CDATA[  <-- For SVG support
-        if ('WebSocket' in window) {
-            (function () {
-                function refreshCSS() {
-                    var sheets = [].slice.call(document.getElementsByTagName("link"));
-                    var head = document.getElementsByTagName("head")[0];
-                    for (var i = 0; i < sheets.length; ++i) {
-                        var elem = sheets[i];
-                        var parent = elem.parentElement || head;
-                        parent.removeChild(elem);
-                        var rel = elem.rel;
-                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-                        }
-                        parent.appendChild(elem);
-                    }
-                }
-                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-                var address = protocol + window.location.host + window.location.pathname + '/ws';
-                var socket = new WebSocket(address);
-                socket.onmessage = function (msg) {
-                    if (msg.data == 'reload') window.location.reload();
-                    else if (msg.data == 'refreshcss') refreshCSS();
-                };
-                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-                    console.log('Live reload enabled.');
-                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-                }
-            })();
-        }
-        else {
-            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-        }
-	// ]]>
-    </script>
 </body>
 
 </html>
